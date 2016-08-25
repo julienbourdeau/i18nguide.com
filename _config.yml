@@ -18,3 +18,10 @@ markdown: kramdown
 
 sass:
   style: compressed
+
+
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
