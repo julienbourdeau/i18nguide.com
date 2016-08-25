@@ -3,6 +3,11 @@ layout: default
 sitemap: true
 ---
 
+{% capture welcome_content %}{% include welcome.md %}{% endcapture %}
+<section class="chapter" id="welcome">
+    {{ welcome_content|markdownify }}
+</section>
+
 {% capture backtotop %}[Back to Top](#top){:.top}{% endcapture %}
 
 {% for post in site.posts reversed %}
