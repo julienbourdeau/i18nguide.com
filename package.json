@@ -1,0 +1,23 @@
+{
+  "name": "i18nguide.com",
+  "version": "1.0.0",
+  "description": "An easy-to-read, quick reference for internationalization best practices and authoritative content around the Web.",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18nguide/i18nguide.com.git"
+  },
+  "author": "Julien Bourdeau",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/i18nguide/i18nguide.com/issues"
+  },
+  "homepage": "http://www.i18nguide.com"
+}
