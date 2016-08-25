@@ -9,7 +9,7 @@
 title: i18n Guide
 email: julien@sigerr.org
 description: > # An easy-to-read, quick reference for internationalization
-best practices and authoritative content around the Web.
+  best practices and authoritative content around the Web.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.i18nguide.com" # the base hostname & protocol for your site
 
