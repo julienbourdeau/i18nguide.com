@@ -8,49 +8,44 @@
     {% include header.html %}
 
 
-    <div class="container">
-      <div class="row">
-        <div class="one column"></div>
-        <div class="ten columns">
+    <div class="site-content chapters">
 
-          <nav class="site-navigation">
-            <input type="checkbox" id="toggle"/>
-            <label for="toggle">Table of Contents</label>
+      <nav class="site-navigation">
+        <input type="checkbox" id="toggle"/>
+        <label for="toggle">Table of Contents</label>
+        <ul>
+          <li><a href="/#welcome">Welcome</a>
             <ul>
-              <li><a href="/#welcome">Welcome</a>
-                <ul>
-                  <li><a href="/#translations">Translations</a></li>
-                  <li><a href="/#how-to-contribute">How to Contribute</a></li>
-                </ul>
-              </li>
-              {% assign lastIsChild = false %}
-              {% for post in site.posts reversed %}
-                {% if post.isChild != true %}
-                  {% if insideSection %}
-                    </ul>
-                    </li>
-                    {% assign insideSection = false %}
-                  {% endif %}
-                {% endif %}
-                <li><a href="/#{{ post.anchor }}">{{ post.title }}</a>
-                {% if post.isChild %}
-                  </li>
-                {% else %}
-                  <ul>
-                  {% assign insideSection = true %}
-                {% endif %}
-                {% assign lastIsChild = post.isChild %}
-              {% endfor %}
-                </ul>
-              </li>
-              <li><a href="/#credits">Credits</a></li>
+              <li><a href="/#translations">Translations</a></li>
+              <li><a href="/#how-to-contribute">How to Contribute</a></li>
             </ul>
-          </nav>
+          </li>
+          {% assign lastIsChild = false %}
+          {% for post in site.posts reversed %}
+            {% if post.isChild != true %}
+              {% if insideSection %}
+                </ul>
+                </li>
+                {% assign insideSection = false %}
+              {% endif %}
+            {% endif %}
+            <li><a href="/#{{ post.anchor }}">{{ post.title }}</a>
+            {% if post.isChild %}
+              </li>
+            {% else %}
+              <ul>
+              {% assign insideSection = true %}
+            {% endif %}
+            {% assign lastIsChild = post.isChild %}
+          {% endfor %}
+            </ul>
+          </li>
+          <li><a href="/#credits">Credits</a></li>
+        </ul>
+      </nav>
 
-          {{ content }}
+      {{ content }}
 
-        </div>
-        <div class="one column"></div>
       </div>
     </div>
 

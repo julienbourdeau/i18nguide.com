@@ -4,8 +4,7 @@
   "description": "An easy-to-read, quick reference for internationalization best practices and authoritative content around the Web.",
   "main": "index.js",
   "dependencies": {
-    "normalize.css": "^4.2.0",
-    "skeleton-css": "^2.0.4"
+    "normalize.css": "^4.2.0"
   },
   "devDependencies": {},
   "scripts": {
