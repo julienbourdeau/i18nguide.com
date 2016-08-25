@@ -3,8 +3,14 @@
 ---
 @charset "utf-8";
 
+$serif: georgia, serif;
+$sans: verdana, sans-serif;
+$brand-color: #A80017;
+$brand-color-dark: darken(#A80017, 10%);
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"normalize",
+	"php-the-right-way",
 	"syntax-highlighting"
 ;
