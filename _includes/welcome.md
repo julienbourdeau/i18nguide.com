@@ -5,8 +5,8 @@ best practices and authoritative content around the Web.
 
 _There is no canonical way to international software_.
 At some point you will want your software to go further and you'll start
-internationalizing it. It's hard to know which way to do it because there is so
-may ways. This website will  not tell you which tools to use, but
+internationalizing it. It's hard to know which way to do it because there are so
+many ways. This website will  not tell you which tools to use, but
 instead offer suggestions for multiple options, when possible explaining the differences
 in approach and use-case.
 
