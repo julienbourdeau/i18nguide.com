@@ -3,12 +3,14 @@ layout: default
 sitemap: true
 ---
 
+{% include newsletter-form.html %}
+
 {% capture welcome_content %}{% include welcome.md %}{% endcapture %}
 <section class="chapter" id="welcome">
     {{ welcome_content|markdownify }}
 </section>
 
-{% capture backtotop %}[Back to Top](#top){:.top}{% endcapture %}
+{% capture backtotop %}[Back to Top](#top){:.top.button}{% endcapture %}
 
 {% for post in site.posts reversed %}
 	{% if post.isChild != true and loop.first != true %}

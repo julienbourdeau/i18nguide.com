@@ -5,12 +5,13 @@
 
 $serif: georgia, serif;
 $sans: "Times", sans-serif;
+
 $brand-color: #A80017;
 $brand-color-dark: darken(#A80017, 10%);
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"normalize",
-	"php-the-right-way",
+	"i18nguide",
 	"syntax-highlighting"
 ;

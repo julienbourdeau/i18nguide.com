@@ -4,7 +4,7 @@
 
 *{
     box-sizing: border-box;
-		font-family: $sans;
+  font-family: $sans;
 }
 
 body{
@@ -53,22 +53,36 @@ a{
     }
 }
 
+.button {
+  border-radius: 3px;
+  transition: all 0.1s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: $brand-color;
+  border: 0;
+  display: inline-block;
+  height: 36px;
+  padding: 0 20px;
+  color: white;
+  font-family: $sans;
+  font-size: 13px;
+  line-height: 40px;
+
+}
+
 .back-to-top{
     text-align: center;
 
     a{
         background: $brand-color-dark;
-        border-radius: 3px;
         display: inline-block;
         height: 40px;
         padding: 0 20px;
-        transition: all 0.1s ease;
         color: white;
         font-family: $sans;
         font-size: 13px;
         line-height: 40px;
-        text-decoration: none;
-        text-transform: uppercase;
 
         &:hover{
             background: $brand-color;
@@ -407,6 +421,32 @@ pre{
         columns: 1;
     }
 }
+
+/******************************************************************************
+ * Newsletter
+ *****************************************************************************/
+
+#mc_embed_signup {
+  background: #F7F7F7;
+  margin-top: 32px;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #c0c0c0;
+
+  h6 {
+    font-size: 21px;
+    line-height: 21px;
+    margin:0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: sans-serif;
+  }
+  input.email {
+    width: 50%;
+  }
+ }
 
 /******************************************************************************
  * Footer
