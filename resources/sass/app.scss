@@ -2,6 +2,10 @@
 
 @tailwind components;
 
+@import
+'components/code'
+;
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
@@ -19,3 +23,56 @@
  */
 
 @tailwind utilities;
+
+body {
+  @apply font-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+::-moz-selection,
+::selection,
+img::selection,
+img::-moz-selection {
+  @apply bg-red-dark text-white;
+}
+
+#sidebar, #chapter {
+  a {
+    @apply no-underline text-red;
+  }
+  a:hover {
+    @apply text-red-light;
+  }
+  a:visited {
+    @applu text-red-dark;
+  }
+}
+
+#sidebar ul {
+  @apply list-reset;
+  h2 {
+    @apply uppercase text-sm my-8 tracking-wide;
+  }
+  a {
+    @apply block my-2;
+  }
+}
+
+#chapter {
+  @apply text-xl;
+  h2 {
+    @apply mb-6 mt-10;
+  }
+  h3 {
+    @apply my-6;
+  }
+  p {
+    @apply mb-6 font-light leading-loose tracking-wide;
+  }
+  pre {
+    @apply my-12;
+  }
+}

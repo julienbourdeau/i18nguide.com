@@ -170,7 +170,7 @@ module.exports = {
     'sm': '576px',
     'md': '768px',
     'lg': '992px',
-    'xl': '1200px',
+    // 'xl': '1200px',
   },
 
 
@@ -195,28 +195,13 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Open Sans',
       'system-ui',
-      'BlinkMacSystemFont',
       '-apple-system',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
-      'Helvetica Neue',
       'sans-serif',
     ],
     'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
+      'Merriweather',
       'Georgia',
       'serif',
     ],
@@ -309,7 +294,8 @@ module.exports = {
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,
-    'loose': 2,
+    'loose': 1.8,
+    'looser': 2,
   },
 
 
