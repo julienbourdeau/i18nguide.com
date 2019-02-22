@@ -26,5 +26,8 @@
   @show
 
   <script src="{{ mix('js/app.js') }}"></script>
+
+  @include('_partials.analytics')
+
 </body>
 </html>
