@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', 'HomeController');
 
 Route::get('/chapter/{slug}', 'ChapterController@show');
