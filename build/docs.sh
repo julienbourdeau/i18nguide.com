@@ -10,4 +10,3 @@ fi
 cd ${docs} && git pull origin master
 
 cd ${base}
-# CLEAR CACHE
